@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<title>Projeto Com Componentes</title>
+</h:head>
+<h:body>
+	<h:form>
+		<h:panelGrid columns="2">
+			<h:outputLabel value="INSTITUTO: " />
+			<h:selectOneMenu>
+				<f:selectItem itemValue="SEL" itemLabel="-Selecione-" />
+				<f:selectItem itemValue="IMC" itemLabel="IMC - Instituto de Matemática e Computação" />
+				<f:selectItem itemValue="IFQ" itemLabel="IFQ - Instituto de Física e Química " />
+				<f:selectItem itemValue="IRN" itemLabel="IRN - Instituto de Recursos Naturais" />
+				<f:selectItem itemValue="IESTI" itemLabel="IESTI - Instituto de Engenharia de sistemas e Tecnologia da Informação " />
+			</h:selectOneMenu>
+
+			<h:outputLabel value="LABOTATÓRIO:  " />
+			<h:selectOneMenu>
+				<f:selectItem itemValue="SEL" itemLabel="-Selecione-" />
+				<f:selectItem itemValue="LDCI" itemLabel="LDC I - Laboratório de Computação I" />
+				<f:selectItem itemValue="LDCII" itemLabel="LDC II - Laboratório de Computação II" />
+				<f:selectItem itemValue="LDCIII" itemLabel="LDC III - Laboratório de Computação III" />
+				<f:selectItem itemValue="LDCIV" itemLabel="LDC IV - Laboratório de Computação IV" />
+			</h:selectOneMenu>
+			
+			<h:panelGrid columns="2">
+			<h:commandButton value="Gravar" />
+			<h:commandButton value="Voltar" action="menu" />
+
+		</h:panelGrid>
+		</h:panelGrid>
+	</h:form>
+
+</h:body>
+</html>

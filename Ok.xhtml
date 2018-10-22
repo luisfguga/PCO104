@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<title>Projeto Com Componentes</title>
+</h:head>
+<h:body>
+
+	<h:outputText value="Realize o login" />
+
+	<h:form>
+		<h:panelGrid columns="2">
+		
+			<h:outputLabel value="Nome: " />
+			<h:inputText maxlength="30" size="25" />
+			<h:outputLabel value="Senha: " />
+			<h:inputSecret maxlength="15" size="15" />
+			<!-- 
+			<h:outputLabel value="OBS: " />
+			<h:inputTextarea cols="25" rows="5" />
+			
+			<h:outputLabel value="Interesses: " />
+			<h:selectManyCheckbox>
+				<f:selectItem itemValue="v" itemLabel="Viagem" />
+				<f:selectItem itemValue="c" itemLabel="Casa" />
+				<f:selectItem itemValue="d" itemLabel="Dinheiro" />
+				<f:selectItem itemValue="m" itemLabel="Motocicleta" />
+			</h:selectManyCheckbox>
+			
+			<h:outputLabel value="Genero: " />
+			<h:selectOneRadio>
+				<f:selectItem itemValue="m" itemLabel="Mulher" />
+				<f:selectItem itemValue="h" itemLabel="Homem" />
+			</h:selectOneRadio>
+			
+			<h:outputLabel value="UF: " />
+			<h:selectOneMenu>
+				<f:selectItem itemValue="sel" itemLabel="-Selecione-" />
+				<f:selectItem itemValue="mg" itemLabel="Minas Gerais" />
+				<f:selectItem itemValue="rj" itemLabel="Rio de Janeiro" />
+				<f:selectItem itemValue="sp" itemLabel="São Paulo" />
+				<f:selectItem itemValue="pr" itemLabel="Paraná" />
+			</h:selectOneMenu>
+			-->
+		</h:panelGrid>
+		<h:panelGrid columns="2">
+			<h:commandButton value="Entrar" action="menu"/>
+			<h:commandButton value="Esqueci minha senha" />
+			<!-- 
+			<h:commandButton value="Excluir" />
+			<h:commandButton value="Editar" />
+			<h:commandLink value="Voltar" />
+			-->
+		</h:panelGrid>
+
+	</h:form>
+
+
+</h:body>
+</html>
